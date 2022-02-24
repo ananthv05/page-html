@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .box {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5em;
+      height: 100px;
+      background-color: #f00;
+      border: 1px solid #000;
+    }
+
+    .box1 {
+      flex-grow: 1;
+    }
+
+    .box2 {
+      flex-grow: 1;
+    }
+
+    .box3 {
+      flex-grow: 1;
+    }
+
+    @media (max-width: 1000px) {
+      .box1 {
+        flex-grow: 4;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .box1 {
+        flex-grow: 3;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div class="box box1">
+      1
+    </div>
+    <div class="box box2">
+      2
+    </div>
+    <div class="box box3">
+      3
+    </div>
+  </div>
+</body>
+
+</html>
